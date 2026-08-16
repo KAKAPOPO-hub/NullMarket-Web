@@ -1,0 +1,33 @@
+[
+  { "id": 1, "nama": "Spinach", "harga": 5000, "stok": 100, "kategori": "sayur", "satuan": "ikat", "gambar": "../../assets/sayur/spinach.jpg", "deskripsi": "Fresh local spinach, 250g per bunch." },
+  { "id": 2, "nama": "Kale", "harga": 6000, "stok": 80, "kategori": "sayur", "satuan": "ikat", "gambar": "../../assets/sayur/kale.jpg", "deskripsi": "Organic kale from Lembang, 200g per bunch." },
+  { "id": 3, "nama": "Broccoli", "harga": 12000, "stok": 60, "kategori": "sayur", "satuan": "pcs", "gambar": "../../assets/sayur/brocoli.jpg", "deskripsi": "Fresh broccoli from Dieng, approx 400g." },
+  { "id": 4, "nama": "Carrot", "harga": 8000, "stok": 90, "kategori": "sayur", "satuan": "kg", "gambar": "../../assets/sayur/carrot.jpg", "deskripsi": "Local carrot from Malang, 1kg per pack." },
+  { "id": 5, "nama": "Cabbage", "harga": 7000, "stok": 70, "kategori": "sayur", "satuan": "pcs", "gambar": "../../assets/sayur/cabbage.jpg", "deskripsi": "Fresh cabbage from Bandung, approx 800g." },
+
+  { "id": 6, "nama": "Apple", "harga": 25000, "stok": 50, "kategori": "buah", "satuan": "kg", "gambar": "../../assets/buah/apel.jpg", "deskripsi": "Fuji apple imported from China, 1kg." },
+  { "id": 7, "nama": "Banana", "harga": 18000, "stok": 60, "kategori": "buah", "satuan": "kg", "gambar": "../../assets/buah/pisang.jpg", "deskripsi": "Cavendish banana from Lampung, 1kg." },
+  { "id": 8, "nama": "Mango", "harga": 20000, "stok": 45, "kategori": "buah", "satuan": "kg", "gambar": "../../assets/buah/mangga.jpg", "deskripsi": "Harum manis mango from Probolinggo, 1kg." },
+  { "id": 9, "nama": "Watermelon", "harga": 35000, "stok": 20, "kategori": "buah", "satuan": "pcs", "gambar": "../../assets/buah/watermelon.jpg", "deskripsi": "Seedless watermelon from Karawang, approx 4kg." },
+  { "id": 10, "nama": "Strawberry", "harga": 30000, "stok": 35, "kategori": "buah", "satuan": "pack", "gambar": "../../assets/buah/strawberry.jpg", "deskripsi": "Fresh strawberry from Ciwidey, 500g per pack." },
+
+  { "id": 11, "nama": "Chicken Nugget", "harga": 35000, "stok": 40, "kategori": "frozen_food", "satuan": "pack", "gambar": "../../assets/pack/chicken_nugget.jpg", "deskripsi": "Frozen chicken nugget, 500g per pack." },
+  { "id": 12, "nama": "Beef Sausage", "harga": 28000, "stok": 50, "kategori": "frozen_food", "satuan": "pack", "gambar": "../../assets/pack/beef_sausage.jpg", "deskripsi": "Beef sausage from local farm, 375g per pack." },
+  { "id": 13, "nama": "Mixed Veggie", "harga": 22000, "stok": 35, "kategori": "frozen_food", "satuan": "pack", "gambar": "../../assets/pack/mixeg_vegie.jpg", "deskripsi": "Frozen mixed vegetables, 500g per pack." },
+  { "id": 14, "nama": "Waffle", "harga": 32000, "stok": 30, "kategori": "frozen_food", "satuan": "pack", "gambar": "../../assets/pack/waffle.jpg", "deskripsi": "Belgian style frozen waffle, 6pcs per pack." },
+
+  { "id": 21, "nama": "Full Cream Milk", "harga": 18000, "stok": 45, "kategori": "dairy", "satuan": "liter", "gambar": "../../assets/dairy/milk.jpg", "deskripsi": "Fresh full cream milk from Malang, 1 liter." },
+  { "id": 22, "nama": "Cheddar Cheese", "harga": 35000, "stok": 30, "kategori": "dairy", "satuan": "pack", "gambar": "../../assets/dairy/milk.jpg", "deskripsi": "Cheddar cheese block imported, 180g per pack." },
+  { "id": 23, "nama": "Greek Yogurt", "harga": 28000, "stok": 25, "kategori": "dairy", "satuan": "pack", "gambar": "../../assets/dairy/milk.jpg", "deskripsi": "Plain greek yogurt, 200g per pack." },
+  { "id": 24, "nama": "Salted Butter", "harga": 22000, "stok": 40, "kategori": "dairy", "satuan": "pack", "gambar": "../../assets/dairy/salted_butter.jpg", "deskripsi": "Salted butter from New Zealand, 200g per pack." },
+  { "id": 25, "nama": "Fresh Egg", "harga": 30000, "stok": 60, "kategori": "dairy", "satuan": "12 pcs", "gambar": "../../assets/dairy/egg.jpg", "deskripsi": "Free range chicken egg from local farm, 12pcs." },
+  { "id": 26, "nama": "Cooking Oil", "harga": 20000, "stok": 40, "kategori": "dairy", "satuan": "liter", "gambar": "../../assets/dairy/cooking_oil.jpg", "deskripsi": "Pure palm cooking oil, 1 liter per bottle." },
+  { "id": 27, "nama": "Wheat Flour", "harga": 15000, "stok": 60, "kategori": "dairy", "satuan": "kg", "gambar": "../../assets/dairy/flour.jpg", "deskripsi": "All purpose wheat flour from local mill, 1kg." },
+  { "id": 28, "nama": "Granulated Sugar", "harga": 14000, "stok": 55, "kategori": "dairy", "satuan": "kg", "gambar": "../../assets/dairy/milk.jpg", "deskripsi": "White granulated sugar from Java, 1kg per pack." },
+  { "id": 29, "nama": "Table Salt", "harga": 5000, "stok": 80, "kategori": "dairy", "satuan": "pack", "gambar": "../../assets/dairy/salat.jpg", "deskripsi": "Iodized table salt from sea water, 500g." },
+  { "id": 30, "nama": "White Rice", "harga": 65000, "stok": 50, "kategori": "dairy", "satuan": "kg", "gambar": "../../assets/dairy/white_rice.jpg", "deskripsi": "Premium white rice from Cianjur, 5kg per pack." },
+
+  { "id": 31, "nama": "Chicken Breast", "harga": 38000, "stok": 35, "kategori": "meat", "satuan": "kg", "gambar": "../../assets/meat/chicken.jpg", "deskripsi": "Fresh boneless chicken breast, 1kg per pack." },
+  { "id": 32, "nama": "Beef Sirloin", "harga": 120000, "stok": 20, "kategori": "meat", "satuan": "kg", "gambar": "../../assets/meat/meat.jpg", "deskripsi": "Australian beef sirloin, sliced 1kg per pack." },
+  { "id": 33, "nama": "Salmon Fillet", "harga": 85000, "stok": 15, "kategori": "meat", "satuan": "kg", "gambar": "../../assets/meat/salmon.jpg", "deskripsi": "Norwegian salmon fillet, fresh 500g per pack." }
+]

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Null Marketplace</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="font-geist bg-gray-50">
+
+    <!-- HEADER -->
+    <header class="w-full fixed top-0 z-50 bg-white border-b border-gray-200 shadow-sm transition-all duration-300 ease-in-out">
+      <div class="w-full px-6 py-3 grid grid-cols-12 items-center gap-4">
+        <div class="col-span-2 flex items-center">
+          <h1 class="text-2xl font-bold text-emerald-600">NullMarket</h1>
+        </div>
+        <div class="col-span-7 flex items-center gap-4">
+
+          <!-- Kategori Dropdown -->
+          <div class="relative" id="kategori-menu">
+            <button onclick="toggleDropdown('kategori-dropdown')" class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-emerald-700 cursor-pointer whitespace-nowrap transition-colors">
+              <span>Kategori</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path fill="currentColor" fill-rule="evenodd" d="M4.47 9.4a.75.75 0 0 1 1.06 0l6.364 6.364a.25.25 0 0 0 .354 0L18.612 9.4a.75.75 0 0 1 1.06 1.06l-6.364 6.364a1.75 1.75 0 0 1-2.475 0L4.47 10.46a.75.75 0 0 1 0-1.06"/>
+              </svg>
+            </button>
+                <div id="kategori-dropdown" class="hidden absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50">
+                    <a onclick="filterKategori('semua')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 cursor-pointer">
+                       Semua
+                    </a>
+                    <a onclick="filterKategori('sayur')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 border-t border-gray-100 cursor-pointer">
+                         Sayuran
+                    </a>
+                    <a onclick="filterKategori('buah')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 border-t border-gray-100 cursor-pointer">
+                         Buah-buahan
+                    </a>
+                    <a onclick="filterKategori('frozen_food')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 border-t border-gray-100 cursor-pointer">
+                         Frozen Food
+                    </a>
+                    <a onclick="filterKategori('dairy')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 border-t border-gray-100 cursor-pointer">
+                         Dairy & Bahan Pokok
+                    </a>
+                    <a onclick="filterKategori('meat')" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors flex items-center gap-2 border-t border-gray-100 cursor-pointer">
+                         Daging & Ikan
+                    </a>
+                </div>
+          </div>
+
+          <input id="product-search-input" type="text" placeholder="Cari barang..." class="flex-1 px-4 py-2.5 text-sm bg-gray-50 border border-gray-300 rounded-lg outline-none focus:border-emerald-600 focus:bg-white text-gray-800 transition-colors"/>
+        </div>
+
+        <div class="col-span-3 flex items-center justify-end gap-4 mr-5">
+          <a class="hover:text-emerald-600 transition-colors text-gray-800 cursor-pointer" href="cart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"/></svg>
+          </a>
+          <a href="#" class="hover:text-emerald-600 transition-colors text-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zM20 8l-7.475 4.675q-.125.075-.262.113t-.263.037t-.262-.037t-.263-.113L4 8v10h16zm-8 3l8-5H4zM4 8v.25v-1.475v.025V6v.8v-.012V8.25zv10z"/></svg>
+          </a>
+          <a href="#" class="hover:text-emerald-600 transition-colors text-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="w-6 h-6" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z"/></svg>
+          </a>
+          <div class="w-px h-6 bg-gray-300"></div>
+
+          <!-- User Dropdown -->
+          <div class="relative" id="user-menu">
+            <button onclick="toggleDropdown('user-dropdown')" class="hover:text-emerald-600 transition-colors text-gray-800 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="currentColor" fill-rule="evenodd" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="user-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden z-50">
+              <button onclick="window.location.href='riwayat.html'" class="px-4 py-3 text-sm text-gray-700 hover:bg-emerald-50 transition-colors flex items-center gap-2 w-full text-left">
+                Riwayat
+              </button>
+              <button onclick="logout()" class="px-4 py-3 text-sm text-red-500 hover:bg-red-50 transition-colors flex items-center gap-2 w-full text-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+                Logout
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-16">
+
+      <div class="px-8 py-6 bg-gray-50 mt-12">
+        <div class="rounded-3xl overflow-hidden bg-emerald-600 px-12 py-10 flex items-center justify-between">
+          <div>
+            <span class="text-emerald-200 text-xs font-bold uppercase tracking-widest">Penawaran Terbatas</span>
+            <h3 class="text-3xl font-black text-white mt-2 mb-1">Gratis Ongkir Seharian</h3>
+            <p class="text-emerald-100 text-sm">Untuk pembelian pertama kamu, tanpa minimum order!</p>
+          </div>
+          <button class="bg-white text-emerald-600 font-bold px-8 py-3 rounded-2xl hover:bg-emerald-50 transition-colors shrink-0">
+            Klaim Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="px-8 py-10">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-2xl font-black text-emerald-600">Produk Pilihan</h2>
+          <a href="#" class="text-sm font-semibold text-emerald-600 hover:underline">Lihat Semua →</a>
+        </div>
+        <div id="container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5"></div>
+      </div>
+    </main>
+
+<script src="../js/logres.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/product.js"></script>
+  </body>
+</html>

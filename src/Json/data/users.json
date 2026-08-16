@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nama": "Irfan Maulana",
+    "email": "irfan@gmail.com",
+    "password": "irfan123"
+  },
+  {
+    "id": 2,
+    "nama": "Siti Rahma",
+    "email": "siti@gmail.com",
+    "password": "siti456"
+  },
+  {
+    "id": 3,
+    "nama": "Budi Santoso",
+    "email": "budi@gmail.com",
+    "password": "budi789"
+  },
+  {
+    "id": 1780808801616,
+    "nama": "Igor Kiki",
+    "email": "kikiigor2@gmail.com",
+    "password": "12345"
+  },
+  {
+    "id": 1780833219833,
+    "nama": "kampang anjing",
+    "email": "blabla@gmail.com",
+    "password": "1111"
+  },
+  {
+    "id": 1780833381291,
+    "nama": "HELMY AJRYAN",
+    "email": "helmy173@smp.belajar.id",
+    "password": "222"
+  },
+  {
+    "id": 1780855497807,
+    "nama": "ayo aja",
+    "email": "nabilatb98@gmail.com",
+    "password": "123456"
+  }
+]
